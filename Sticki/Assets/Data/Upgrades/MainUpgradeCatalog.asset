@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c97930ab75f6e4e81a8ac0dee995fd, type: 3}
+  m_Name: MainUpgradeCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.Upgrades.UpgradeCatalog
+  characterUpgrades:
+  - {fileID: 11400000, guid: 816559e91e398254dbd10da056ccbde1, type: 2}
+  - {fileID: 11400000, guid: 78620f38c53e4874487c98ad6389a9d4, type: 2}
+  - {fileID: 11400000, guid: 0d452b4c8cc6d8941b55bbf9eb142c3f, type: 2}
+  - {fileID: 11400000, guid: 7b34ff8da3180f1428527e7bfc170b88, type: 2}
+  weaponUpgrades:
+  - {fileID: 11400000, guid: 863ab306cba386c4dad734725dc395a7, type: 2}
+  - {fileID: 11400000, guid: 42fcddc95073fcc4d97b475cdf5f5646, type: 2}
+  - {fileID: 11400000, guid: 55f3d8a4e9d049ff8dfb30c9f8d1b7c2, type: 2}

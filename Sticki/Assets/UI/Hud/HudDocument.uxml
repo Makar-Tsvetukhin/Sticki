@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Hud/HudStyles.uss?fileID=7433441132597879392&amp;guid=a362a8cfcba423c4cb4c7df736d36137&amp;type=3#HudStyles"/>
+    <ui:VisualElement name="hud-root" class="hud-root">
+        <ui:VisualElement name="crosshair-container" class="crosshair-container">
+            <ui:VisualElement name="crosshair-line-h" class="crosshair-line-h"/>
+            <ui:VisualElement name="crosshair-line-v" class="crosshair-line-v"/>
+            <ui:VisualElement name="hit-marker-container" class="hit-marker-container">
+                <ui:VisualElement class="hit-line hit-line-tl" />
+                <ui:VisualElement class="hit-line hit-line-tr" />
+                <ui:VisualElement class="hit-line hit-line-bl" />
+                <ui:VisualElement class="hit-line hit-line-br" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="interaction-prompt" class="interaction-prompt">
+            <ui:Label name="interaction-key" text="E" class="interaction-key-text"/>
+            <ui:Label name="interaction-separator" text="—" class="interaction-separator-text"/>
+            <ui:Label name="interaction-action" text="ОТКРЫТЬ ДВЕРЬ" class="interaction-action-text"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="bottom-row" class="bottom-row">
+            <ui:VisualElement name="hp-panel" class="hp-container">
+                <ui:VisualElement name="hp-info-row" style="flex-direction: row; align-items: flex-end;">
+                    <ui:Label name="hp-label" text="HP" class="hp-label-text"/>
+                    <ui:Label name="hp-value" text="100" class="hp-value-text"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="hp-bar-bg" class="hp-bar-bg" style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                    <ui:VisualElement name="hp-bar-fill" class="hp-bar-fill"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ammo-panel" class="ammo-container">
+                <ui:VisualElement name="ammo-numbers-row" class="ammo-numbers-row">
+                    <ui:Label name="ammo-current" text="30" class="ammo-current-text"/>
+                    <ui:Label name="ammo-separator" text="/" class="ammo-separator"/>
+                    <ui:Label name="ammo-reserve" text="90" class="ammo-reserve-text"/>
+                </ui:VisualElement>
+                <ui:Label name="ammo-label" text="AMMO" class="ammo-label-text"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="arena-progress" class="arena-progress">
+            <ui:Label name="arena-progress-label" text="KILLS" class="arena-progress-label-text"/>
+            <ui:Label name="arena-progress-value" text="0/0" class="arena-progress-value-text"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

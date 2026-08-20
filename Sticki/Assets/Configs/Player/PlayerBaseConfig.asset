@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba966e6d0487554795caf6fb2ffad17, type: 3}
+  m_Name: PlayerBaseConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.Player.Config.PlayerBaseConfig
+  moveSpeed: 5.5
+  sprintMultiplier: 1.4
+  jumpHeight: 1.5
+  gravity: -20
+  lookSensitivity: 0.1
+  maxPitchAngle: 75
+  maxHealth: 100

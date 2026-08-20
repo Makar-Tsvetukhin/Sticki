@@ -1,0 +1,27 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="RunTabStyles.uss"/>
+    <ui:VisualElement name="runtab-root" class="runtab-root">
+        <ui:VisualElement name="runtab-overlay" class="runtab-overlay"/>
+        <ui:VisualElement name="runtab-content" class="runtab-content">
+            <ui:VisualElement name="runtab-header" class="runtab-header">
+                <ui:VisualElement class="runtab-header-left">
+                    <ui:Label text="ТЕКУЩИЙ ЗАБЕГ" class="runtab-title"/>
+                    <ui:VisualElement class="runtab-title-underline"/>
+                    <ui:Label name="room-value" text="Комната 1" class="runtab-room"/>
+                    <ui:Label name="arena-value" text="" class="runtab-arena"/>
+                    <ui:VisualElement class="runtab-timer-row">
+                        <ui:Label text="ВРЕМЯ ЗАБЕГА" class="runtab-meta-title"/>
+                        <ui:Label name="timer-value" text="00:00" class="runtab-timer"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="runtab-body" class="runtab-body">
+                <ui:VisualElement name="upgrades-panel" class="runtab-panel upgrades-panel">
+                    <ui:Label text="ТЕКУЩИЕ УЛУЧШЕНИЯ" class="runtab-panel-title"/>
+                    <ui:ScrollView name="upgrades-list" class="upgrades-list"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,83 @@
+.menu-root {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 14, 18, 0.98);
+    background-image: url("project://database/Assets/UI/Menu/БетонЫЫЫЫЫ.png");
+    background-repeat: no-repeat;
+    -unity-background-scale-mode: scale-and-crop;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-header {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 90px;
+}
+
+.menu-title {
+    color: rgba(245, 245, 245, 0.98);
+    font-size: 68px;
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+    -unity-text-outline-color: rgba(0, 0, 0, 0.2);
+    -unity-text-outline-width: 1px;
+    margin-bottom: 8px;
+}
+
+.title-underline {
+    width: 220px;
+    height: 2px;
+    background-color: rgba(210, 70, 70, 0.9);
+    margin-bottom: 10px;
+}
+
+.menu-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    -unity-font-style: normal;
+    letter-spacing: 3px;
+    margin-bottom: 36px;
+}
+
+.menu-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.menu-button {
+    width: 380px;
+    height: 54px;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 20px;
+    letter-spacing: 4px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 16px;
+    transition-duration: 0.2s;
+    opacity: 1;
+}
+
+.menu-button--last {
+    margin-bottom: 0;
+}
+
+.menu-button:hover {
+    scale: 1.03;
+    color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(210, 70, 70, 1);
+}
+
+.menu-button:focus {
+    color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(210, 70, 70, 1);
+}

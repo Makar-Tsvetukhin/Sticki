@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Style src="AppTheme.uss"/>
+    <ui:Template name="MainMenu" src="project://database/Assets/UI/Menu/MainMenu.uxml"/>
+    <ui:Template name="Settings" src="project://database/Assets/UI/Settings/SettingsDocument.uxml"/>
+    <ui:Template name="Records" src="project://database/Assets/UI/Records/RecordsDocument.uxml"/>
+    <ui:Template name="HowTo" src="project://database/Assets/UI/HowTo/HowToDocument.uxml"/>
+    <ui:Template name="Upgrades" src="project://database/Assets/UI/Upgrades/UpgradesDocument.uxml"/>
+    
+    <ui:VisualElement name="frontend-ui-root" class="ui-root">
+        <ui:Instance name="MainMenuInstance" template="MainMenu" class="ui-screen" />
+        <ui:Instance name="SettingsInstance" template="Settings" class="ui-screen" />
+        <ui:Instance name="RecordsInstance" template="Records" class="ui-screen" />
+        <ui:Instance name="HowToInstance" template="HowTo" class="ui-screen" />
+        <ui:Instance name="UpgradesInstance" template="Upgrades" class="ui-screen" />
+    </ui:VisualElement>
+</ui:UXML>

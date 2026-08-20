@@ -1,0 +1,30 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="DeathStyles.uss"/>
+    <ui:VisualElement name="death-root" class="death-root">
+        <ui:VisualElement name="death-overlay" class="death-overlay"/>
+        <ui:VisualElement name="death-content" class="death-content">
+            <ui:Label text="ВЫ ПОГИБЛИ" class="death-title"/>
+            <ui:VisualElement class="death-title-underline"/>
+
+            <ui:VisualElement class="death-stats">
+                <ui:VisualElement class="death-stat-row">
+                    <ui:Label text="КОМНАТЫ" class="death-stat-label"/>
+                    <ui:Label name="death-rooms" text="1" class="death-stat-value"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="death-stat-row">
+                    <ui:Label text="УБИЙСТВА" class="death-stat-label"/>
+                    <ui:Label name="death-kills" text="0" class="death-stat-value"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="death-stat-row">
+                    <ui:Label text="ВРЕМЯ ЗАБЕГА" class="death-stat-label"/>
+                    <ui:Label name="death-time" text="00:00" class="death-stat-value"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="death-buttons">
+                <ui:Button name="btn-death-restart" text="РЕСТАРТ" class="death-button"/>
+                <ui:Button name="btn-death-main-menu" text="В ГЛАВНОЕ МЕНЮ" class="death-button death-button--last"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,18 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="UpgradesStyles.uss"/>
+    <ui:VisualElement name="upgrades-root" class="upgrades-root">
+        <ui:VisualElement name="upgrades-header" class="upgrades-header">
+            <ui:Label name="upgrades-title" text="БИБЛИОТЕКА УЛУЧШЕНИЙ" class="upgrades-title"/>
+            <ui:VisualElement name="upgrades-title-underline" class="upgrades-title-underline"/>
+            <ui:Label name="upgrades-subtitle" text="ОТКРЫТО 0 / 0" class="upgrades-subtitle"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="upgrades-content" class="upgrades-content">
+            <ui:ScrollView name="upgrades-list" class="upgrades-list"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="upgrades-footer" class="upgrades-footer">
+            <ui:Button name="btn-upgrades-back" text="НАЗАД" class="upgrades-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

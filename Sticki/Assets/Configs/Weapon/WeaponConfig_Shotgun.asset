@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4a80cb6811fde4e8d13f2f26b1c4b7, type: 3}
+  m_Name: WeaponConfig_Shotgun
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.Combat.Config.WeaponConfig
+  damage: 45
+  fireIntervalSeconds: 0.9
+  range: 35
+  pelletsPerShot: 8
+  spreadAngle: 5
+  magazineSize: 7
+  infiniteReserveAmmo: 0
+  initialReserveAmmo: 28
+  reloadType: 1
+  reloadSeconds: 2.4
+  reloadStartSeconds: 1.23
+  reloadInsertSeconds: 1.13
+  reloadEndSeconds: 0.8
+  reloadShellAppearStartDelay: 0.5
+  reloadShellAppearInsertDelay: 0.5
