@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7375852143303263572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8961800712876833655}
+  - component: {fileID: 4780120225879463103}
+  - component: {fileID: 7408970641627212325}
+  - component: {fileID: 4353788730552695190}
+  - component: {fileID: 2203897668496932213}
+  - component: {fileID: 6198604262348829539}
+  - component: {fileID: 1741196383688689415}
+  - component: {fileID: 3489012574401122334}
+  - component: {fileID: 5036507866662534092}
+  - component: {fileID: -3069758019673175277}
+  m_Layer: 0
+  m_Name: GameplayUIRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8961800712876833655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4780120225879463103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: f3dc67d886bee964abe4ca623c025fe8, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 956a9b6fa76820f40aea62ecb8942cdb, type: 3}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
+--- !u!114 &7408970641627212325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d2eb987725f2241b824aa2deb6067f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.UI.GameplayUIRootController
+--- !u!114 &4353788730552695190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8904121f76d86748aca2da23df6ed31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HudController
+  rootName: HudInstance
+  visibleClassName: visible
+--- !u!114 &2203897668496932213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d4cd7072da97048a6db589d1b8c628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.UI.PauseController
+  rootName: PauseInstance
+  visibleClassName: visible
+  mainMenuSceneName: MainMenu
+  autoPauseOnFocusLost: 0
+  pauseAudioListener: 0
+  forceGameplayCursorOnResume: 1
+  gameplayCursorLockMode: 1
+  gameplayCursorVisible: 0
+  playerControlCoordinator: {fileID: 0}
+  playerHealth: {fileID: 0}
+  hudController: {fileID: 0}
+--- !u!114 &6198604262348829539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88d6a799859cbb14fa35f5ea65ab4ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.UI.DeathScreenController
+  rootName: DeathInstance
+  visibleClassName: visible
+  mainMenuSceneName: MainMenu
+  freezeTimeOnDeath: 0
+  pauseAudioListener: 0
+  playerHealth: {fileID: 0}
+  playerControlCoordinator: {fileID: 0}
+  hudController: {fileID: 0}
+  arenaSpawner: {fileID: 0}
+  runTabOverlayController: {fileID: 0}
+--- !u!114 &1741196383688689415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef63b9f179363b428a82afbd46dae96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.UI.RunTabOverlayController
+  rootName: RunTabInstance
+  visibleClassName: visible
+  playerHealth: {fileID: 0}
+  playerCombat: {fileID: 0}
+  arenaSpawner: {fileID: 0}
+  pauseController: {fileID: 0}
+  currentRoomNumber: 1
+  currentArenaLabel: "\u0410\u0440\u0435\u043D\u0430: 1"
+  activeUpgrades: []
+--- !u!114 &3489012574401122334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4f728a1a7e4b8a8c0a37c2f7f93f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.UI.SettingsController
+  rootName: SettingsInstance
+  visibleClassName: visible
+--- !u!114 &5036507866662534092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb33fdce7bcf4e41b4912213c4fb99d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.UI.UpgradeSelectionUI
+  rootName: UpgradeSelectionInstance
+  visibleClassName: visible
+--- !u!114 &-3069758019673175277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375852143303263572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb11de8f3d254f042885ae7dfef1cc57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.UI.HudRuntimeBinder
+  hud: {fileID: 4353788730552695190}
+  playerHealth: {fileID: 0}
+  playerCombat: {fileID: 0}
+  arenaSpawner: {fileID: 0}
+  alwaysInfiniteReserve: 1
+  reserveAmmoFallback: 0

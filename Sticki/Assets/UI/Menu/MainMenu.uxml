@@ -1,0 +1,17 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="MainMenu.uss" />
+    <ui:VisualElement name="menu-root" class="menu-root">
+        <ui:VisualElement name="menu-header" class="menu-header">
+            <ui:Label name="menu-title" text="STICKI" class="menu-title" />
+            <ui:VisualElement name="title-underline" class="title-underline" />
+        </ui:VisualElement>
+        <ui:VisualElement name="menu-buttons" class="menu-buttons">
+            <ui:Button name="btn-start" text="СТАРТ" class="menu-button" />
+            <ui:Button name="btn-records" text="РЕКОРДЫ" class="menu-button" />
+            <ui:Button name="btn-upgrades" text="УЛУЧШЕНИЯ" class="menu-button" />
+            <ui:Button name="btn-settings" text="НАСТРОЙКИ" class="menu-button" />
+            <ui:Button name="btn-howto" text="КАК ИГРАТЬ" class="menu-button" />
+            <ui:Button name="btn-quit" text="ВЫХОД" class="menu-button menu-button--last" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

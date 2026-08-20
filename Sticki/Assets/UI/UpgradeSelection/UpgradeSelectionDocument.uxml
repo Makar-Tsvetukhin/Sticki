@@ -1,0 +1,19 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="UpgradeSelectionStyles.uss"/>
+    <ui:VisualElement name="upgrade-selection-root" class="upgrade-selection-root">
+        <ui:VisualElement name="upgrade-selection-overlay" class="upgrade-selection-overlay"/>
+        <ui:VisualElement name="upgrade-selection-content" class="upgrade-selection-content">
+            <ui:VisualElement class="upgrade-selection-header">
+                <ui:Label name="upgrade-selection-title" text="ВЫБОР" class="upgrade-selection-title"/>
+                <ui:VisualElement class="upgrade-selection-title-underline"/>
+                <ui:Label name="upgrade-selection-subtitle" text="Выберите один вариант" class="upgrade-selection-subtitle"/>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="upgrade-selection-options" class="upgrade-selection-options"/>
+
+            <ui:VisualElement class="upgrade-selection-footer">
+                <ui:Button name="btn-upgrade-selection-close" text="ЗАКРЫТЬ" class="upgrade-selection-button upgrade-selection-button--secondary"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

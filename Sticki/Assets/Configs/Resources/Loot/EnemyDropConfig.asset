@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4d5ac7d56a4a1ba6f0cf24d3e4a8d1, type: 3}
+  m_Name: EnemyDropConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.Loot.EnemyDropConfig
+  ammoPickupPrefab: {fileID: 3210618063037164751, guid: 240344588c544cd43ab71b62897b345e, type: 3}
+  healthPickupPrefab: {fileID: 3407641265733729377, guid: b19ac4955750e1f45aefef548e694b5e, type: 3}
+  ammoDropChance: 0.28
+  healthDropChance: 0.14
+  ammoPickupAmount: 24
+  healthPickupAmount: 25
+  spawnHeightOffset: 0.35
+  pickupTriggerRadius: 0.85
+  ammoPrewarmCount: 12
+  healthPrewarmCount: 8
+  ammoMaxPoolSize: 32
+  healthMaxPoolSize: 24
+  spinSpeed: 90
+  bobAmplitude: 0.08
+  bobFrequency: 2

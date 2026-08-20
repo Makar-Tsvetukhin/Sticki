@@ -1,0 +1,227 @@
+.hud-root {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    justify-content: flex-end;
+}
+
+.crosshair-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 28px;
+    translate: -50% -50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.crosshair-line-h {
+    width: 28px;
+    height: 3px;
+    background-color: rgba(10, 20, 15, 0.95);
+    position: absolute;
+}
+
+.crosshair-line-v {
+    width: 3px;
+    height: 28px;
+    background-color: rgba(10, 20, 15, 0.95);
+    position: absolute;
+}
+
+.hit-marker-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    translate: -50% -50%;
+    opacity: 0;
+    scale: 0.8 0.8;
+    transition-property: opacity, scale;
+    transition-duration: 0.05s;
+}
+
+.hit-marker--visible {
+    opacity: 1;
+    scale: 1 1;
+}
+
+.hit-marker--kill .hit-line {
+    background-color: #FF0000;
+}
+
+.hit-line {
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: #FFFF00;
+}
+
+.hit-line-tl {
+    top: 0;
+    left: 0;
+    rotate: 45deg;
+}
+
+.hit-line-tr {
+    top: 0;
+    right: 0;
+    rotate: -45deg;
+}
+
+.hit-line-bl {
+    bottom: 0;
+    left: 0;
+    rotate: -45deg;
+}
+
+.hit-line-br {
+    bottom: 0;
+    right: 0;
+    rotate: 45deg;
+}
+
+.bottom-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.hud-panel {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.hp-container {
+    align-items: flex-start;
+}
+
+.hp-label-text {
+    color: #FFFFFF;
+    font-size: 14px;
+    -unity-font-style: bold;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.hp-value-text {
+    color: #FFFFFF;
+    font-size: 32px;
+    -unity-font-style: bold;
+}
+
+.hp-bar-bg {
+    width: 250px;
+    height: 8px;
+    background-color: rgba(50, 50, 50, 0.8);
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.hp-bar-fill {
+    width: 100%;
+    height: 100%;
+    background-color: #FF0000;
+}
+
+.hp-bar-fill--low {
+    background-color: #FF5555;
+}
+
+.ammo-container {
+    align-items: flex-end;
+}
+
+.ammo-numbers-row {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.ammo-current-text {
+    color: #FFFFFF;
+    font-size: 40px;
+    -unity-font-style: bold;
+}
+
+.ammo-separator {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    margin: 0 4px 6px 4px;
+}
+
+.ammo-reserve-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.ammo-label-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.arena-progress {
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    align-items: flex-end;
+}
+
+.arena-progress-label-text {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 12px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.arena-progress-value-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 28px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.interaction-prompt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: 20px 14px;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 6px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.15s;
+}
+
+.interaction-prompt--visible {
+    opacity: 1;
+}
+
+.interaction-key-text {
+    color: #FFFFFF;
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+.interaction-separator-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.interaction-action-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}

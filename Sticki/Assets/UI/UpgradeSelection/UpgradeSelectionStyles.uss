@@ -1,0 +1,157 @@
+.upgrade-selection-root {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.upgrade-selection-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.upgrade-selection-content {
+    width: 860px;
+    max-width: 92%;
+    min-height: 520px;
+    background-color: rgba(8, 10, 14, 0.88);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.14);
+    padding: 18px 20px 20px 20px;
+}
+
+.upgrade-selection-header {
+    align-items: center;
+}
+
+.upgrade-selection-title {
+    color: rgba(245, 245, 245, 0.98);
+    font-size: 44px;
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+    margin-bottom: 6px;
+}
+
+.upgrade-selection-title-underline {
+    width: 330px;
+    height: 2px;
+    background-color: rgba(210, 70, 70, 0.92);
+    margin-bottom: 10px;
+}
+
+.upgrade-selection-subtitle {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 14px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.upgrade-selection-options {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.upgrade-option-card {
+    width: 100%;
+    min-height: 122px;
+    margin-bottom: 14px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-left-width: 3px;
+    border-left-color: rgba(210, 70, 70, 0.88);
+    padding: 12px 14px;
+}
+
+.upgrade-option-card:hover,
+.upgrade-option-card:focus {
+    border-color: rgba(255, 255, 255, 0.24);
+    border-left-color: rgba(210, 70, 70, 1);
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+.upgrade-option-title {
+    color: rgba(245, 245, 245, 0.97);
+    font-size: 26px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.upgrade-option-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.upgrade-option-icon {
+    width: 74px;
+    height: 74px;
+    min-width: 74px;
+    min-height: 74px;
+    margin-right: 14px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(210, 70, 70, 0.72);
+    background-color: rgba(210, 70, 70, 0.24);
+    -unity-background-scale-mode: scale-to-fit;
+    align-items: center;
+    justify-content: center;
+}
+
+.upgrade-option-icon-text {
+    color: rgba(245, 245, 245, 0.95);
+    font-size: 18px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.upgrade-option-text-wrap {
+    flex-grow: 1;
+}
+
+.upgrade-option-description {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 16px;
+    letter-spacing: 1px;
+    white-space: normal;
+}
+
+.upgrade-selection-footer {
+    align-items: flex-end;
+    margin-top: 8px;
+}
+
+.upgrade-selection-button {
+    width: 210px;
+    height: 46px;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 16px;
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.upgrade-selection-button:hover,
+.upgrade-selection-button:focus {
+    scale: 1.02;
+    border-bottom-color: rgba(210, 70, 70, 1);
+}
+
+.upgrade-selection-button--secondary {
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.upgrade-empty {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 20px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18446ae88e124c946894d1ab730ae58e, type: 3}
+  m_Name: Arena1
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.Spawning.Config.ArenaSpawnConfig
+  dynamicSpawnTotal: 5
+  hardAliveCap: 80
+  startDelayAfterCombat: 0.2
+  minDistanceFromPlayer: 8
+  fallbackMinDistance: 4
+  pointBlockedRadius: 0.45
+  spawnBlockedBy:
+    serializedVersion: 2
+    m_Bits: 115712
+  lineOfSightMask:
+    serializedVersion: 2
+    m_Bits: 65536
+  preferHiddenSpawnPoints: 1
+  enemyTypes:
+  - id: 1
+    prefab: {fileID: 3801473015117131371, guid: cdf2a6229a84b464a9829913be04d4d1, type: 3}
+    weight: 7
+    prewarmCount: 40
+    maxPoolSize: 80
+  - id: 2
+    prefab: {fileID: 222559098068707448, guid: b5b5aba795d20b64cadc3e63cb5c186c, type: 3}
+    weight: 3
+    prewarmCount: 40
+    maxPoolSize: 80
+  waves:
+  - enemiesInWave: 5
+    minPerTick: 1
+    maxPerTick: 2
+    tickInterval: 0.45
+    interWaveDelay: 40
+    earlyNextWaveKillRatio: 0.8

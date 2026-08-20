@@ -1,0 +1,59 @@
+/* Base UI Root Styles */
+.ui-root {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    picking-mode: ignore;
+    left: 0;
+    top: 0;
+}
+
+/* Base style for every screen container (TemplateContainer) */
+.ui-screen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    picking-mode: position;
+}
+
+/* When a screen is active */
+.ui-screen.visible {
+    display: flex;
+}
+
+/* 
+   SYSTEMIC FIX: 
+   Force all internal screen roots to be visible and full-size when their parent TemplateContainer is visible.
+*/
+.ui-screen.visible .menu-root, 
+.ui-screen.visible .settings-root, 
+.ui-screen.visible .records-root, 
+.ui-screen.visible .howto-root, 
+.ui-screen.visible .upgrades-root,
+.ui-screen.visible .hud-root, 
+.ui-screen.visible .pause-root, 
+.ui-screen.visible .death-root, 
+.ui-screen.visible .runtab-root, 
+.ui-screen.visible .upgrade-selection-root {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Special handling for HUD - it should not block raycasts to the world by default */
+.hud-instance {
+    picking-mode: ignore;
+}
+
+.hud-root {
+    picking-mode: ignore;
+}
+
+/* Overlays should have a background dimming. */
+.pause-root, .death-root, .upgrade-selection-root {
+    background-color: rgba(0, 0, 0, 0.6);
+}

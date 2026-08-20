@@ -1,0 +1,150 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Settings/SettingsStyles.uss?fileID=7433441132597879392&amp;guid=24ce31286a997e9408d7c4f15c9027ac&amp;type=3#SettingsStyles"/>
+    <ui:VisualElement name="settings-root" class="settings-root">
+        <ui:VisualElement name="settings-header" class="settings-header">
+            <ui:Label name="settings-title" text="НАСТРОЙКИ" class="settings-title"/>
+            <ui:VisualElement name="settings-title-underline" class="settings-title-underline"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="settings-content" class="settings-content">
+            <ui:VisualElement name="settings-nav" class="settings-nav">
+                <ui:Button name="nav-general" text="ОБЩИЕ" class="nav-button is-active"/>
+                <ui:Button name="nav-audio" text="ЗВУК" class="nav-button"/>
+                <ui:Button name="nav-controls" text="УПРАВЛЕНИЕ" class="nav-button"/>
+                <ui:Button name="nav-video" text="ВИДЕО" class="nav-button nav-button--last"/>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="settings-panels" class="settings-panels">
+                <ui:VisualElement name="panel-general" class="settings-panel">
+                    <ui:Label name="general-title" text="ОБЩИЕ" class="panel-title"/>
+                    <ui:VisualElement class="panel-rows">
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ЯЗЫК" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:DropdownField name="language-dropdown" class="panel-dropdown"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ЧУВСТ. МЫШИ" class="panel-label"/>
+                            <ui:VisualElement class="panel-control panel-control--slider">
+                                <ui:Slider name="mouse-sensitivity" class="panel-slider"/>
+                                <ui:Label name="mouse-sensitivity-value" text="1.0" class="panel-value"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="FOV" class="panel-label"/>
+                            <ui:VisualElement class="panel-control panel-control--slider">
+                                <ui:Slider name="fov-slider" class="panel-slider"/>
+                                <ui:Label name="fov-value" text="90" class="panel-value"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement name="panel-audio" class="settings-panel is-hidden">
+                    <ui:Label name="audio-title" text="ЗВУК" class="panel-title"/>
+                    <ui:VisualElement class="panel-rows">
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ОБЩАЯ ГРОМКОСТЬ" class="panel-label"/>
+                            <ui:VisualElement class="panel-control panel-control--slider">
+                                <ui:Slider name="master-volume" class="panel-slider"/>
+                                <ui:Label name="master-volume-value" text="100" class="panel-value"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ГРОМКОСТЬ ЭФФЕКТОВ" class="panel-label"/>
+                            <ui:VisualElement class="panel-control panel-control--slider">
+                                <ui:Slider name="sfx-volume" class="panel-slider"/>
+                                <ui:Label name="sfx-volume-value" text="100" class="panel-value"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ГРОМКОСТЬ МУЗЫКИ" class="panel-label"/>
+                            <ui:VisualElement class="panel-control panel-control--slider">
+                                <ui:Slider name="music-volume" class="panel-slider"/>
+                                <ui:Label name="music-volume-value" text="100" class="panel-value"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement name="panel-controls" class="settings-panel is-hidden">
+                    <ui:Label name="controls-title" text="УПРАВЛЕНИЕ" class="panel-title"/>
+                    <ui:VisualElement class="panel-rows">
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ВПЕРЕД" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:Button name="bind-forward" text="W" class="bind-button"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="НАЗАД" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:Button name="bind-back" text="S" class="bind-button"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ВЛЕВО" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:Button name="bind-left" text="A" class="bind-button"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ВПРАВО" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:Button name="bind-right" text="D" class="bind-button"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ПРЫЖОК" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:Button name="bind-jump" text="SPACE" class="bind-button"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="ВЗАИМОДЕЙСТВИЕ" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:Button name="bind-interact" text="E" class="bind-button"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement name="panel-video" class="settings-panel is-hidden">
+                    <ui:Label name="video-title" text="ВИДЕО" class="panel-title"/>
+                    <ui:VisualElement class="panel-rows">
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="VSync" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:Toggle name="vsync-toggle" class="panel-toggle"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="FPS" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:DropdownField name="fps-dropdown" class="panel-dropdown"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="РАЗРЕШЕНИЕ" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:DropdownField name="resolution-dropdown" class="panel-dropdown"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="panel-row">
+                            <ui:Label text="РЕЖИМ ОКНА" class="panel-label"/>
+                            <ui:VisualElement class="panel-control">
+                                <ui:DropdownField name="window-mode-dropdown" class="panel-dropdown"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="settings-footer" class="settings-footer">
+            <ui:Button name="btn-apply" text="ПРИМЕНИТЬ" class="footer-button"/>
+            <ui:Button name="btn-back" text="НАЗАД" class="footer-button footer-button--secondary"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

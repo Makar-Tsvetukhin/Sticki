@@ -1,0 +1,24 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="RecordsStyles.uss"/>
+    <ui:VisualElement name="records-root" class="records-root">
+        <ui:VisualElement name="records-header" class="records-header">
+            <ui:Label name="records-title" text="РЕКОРДЫ" class="records-title"/>
+            <ui:VisualElement name="records-title-underline" class="records-title-underline"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="records-content" class="records-content">
+            <ui:VisualElement name="records-table-head" class="records-table-head">
+                <ui:Label text="#" class="records-col records-col--index records-col--head"/>
+                <ui:Label text="ДАТА" class="records-col records-col--date records-col--head"/>
+                <ui:Label text="КОМНАТЫ" class="records-col records-col--rooms records-col--head"/>
+                <ui:Label text="ВРЕМЯ" class="records-col records-col--time records-col--head"/>
+                <ui:Label text="ФРАГИ" class="records-col records-col--kills records-col--head"/>
+            </ui:VisualElement>
+            <ui:ScrollView name="records-list" class="records-list"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="records-footer" class="records-footer">
+            <ui:Button name="btn-records-back" text="НАЗАД" class="records-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

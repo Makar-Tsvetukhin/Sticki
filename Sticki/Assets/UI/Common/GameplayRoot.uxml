@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Style src="AppTheme.uss"/>
+    <ui:Template name="Hud" src="project://database/Assets/UI/Hud/HudDocument.uxml"/>
+    <ui:Template name="Pause" src="project://database/Assets/UI/Pause/PauseDocument.uxml"/>
+    <ui:Template name="Death" src="project://database/Assets/UI/Death/DeathDocument.uxml"/>
+    <ui:Template name="RunTab" src="project://database/Assets/UI/RunTab/RunTabDocument.uxml"/>
+    <ui:Template name="Settings" src="project://database/Assets/UI/Settings/SettingsDocument.uxml"/>
+    <ui:Template name="UpgradeSelection" src="project://database/Assets/UI/UpgradeSelection/UpgradeSelectionDocument.uxml"/>
+    
+    <ui:VisualElement name="gameplay-ui-root" class="ui-root">
+        <ui:Instance name="HudInstance" template="Hud" class="ui-screen visible hud-instance" />
+        <ui:Instance name="PauseInstance" template="Pause" class="ui-screen" />
+        <ui:Instance name="DeathInstance" template="Death" class="ui-screen" />
+        <ui:Instance name="RunTabInstance" template="RunTab" class="ui-screen" />
+        <ui:Instance name="SettingsInstance" template="Settings" class="ui-screen" />
+        <ui:Instance name="UpgradeSelectionInstance" template="UpgradeSelection" class="ui-screen" />
+    </ui:VisualElement>
+</ui:UXML>

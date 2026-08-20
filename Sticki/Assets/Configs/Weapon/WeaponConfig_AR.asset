@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4a80cb6811fde4e8d13f2f26b1c4b7, type: 3}
+  m_Name: WeaponConfig_AR
+  m_EditorClassIdentifier: Assembly-CSharp::Sticki.Combat.Config.WeaponConfig
+  damage: 12
+  fireIntervalSeconds: 0.12
+  range: 100
+  pelletsPerShot: 1
+  spreadAngle: 1
+  magazineSize: 30
+  infiniteReserveAmmo: 0
+  initialReserveAmmo: 120
+  reloadType: 0
+  reloadSeconds: 1.8
+  reloadStartSeconds: 0.25
+  reloadInsertSeconds: 0.35
+  reloadEndSeconds: 0.25
+  reloadShellAppearStartDelay: 0
+  reloadShellAppearInsertDelay: 0

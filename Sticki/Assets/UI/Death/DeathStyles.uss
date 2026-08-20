@@ -1,0 +1,94 @@
+.death-root {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.death-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.death-content {
+    width: 620px;
+    padding: 10px 8px 12px 8px;
+    align-items: center;
+}
+
+.death-title {
+    color: rgba(245, 245, 245, 0.98);
+    font-size: 58px;
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.death-title-underline {
+    width: 330px;
+    height: 2px;
+    background-color: rgba(210, 70, 70, 0.9);
+    margin-bottom: 20px;
+}
+
+.death-stats {
+    width: 92%;
+    margin-bottom: 22px;
+}
+
+.death-stat-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.16);
+}
+
+.death-stat-label {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 14px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.death-stat-value {
+    color: rgba(245, 245, 245, 0.96);
+    font-size: 30px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.death-buttons {
+    width: 100%;
+    align-items: center;
+}
+
+.death-button {
+    width: 430px;
+    height: 54px;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 20px;
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 14px;
+    transition-duration: 0.2s;
+}
+
+.death-button:hover,
+.death-button:focus {
+    scale: 1.03;
+    color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(210, 70, 70, 1);
+}
+
+.death-button--last {
+    margin-bottom: 0;
+}

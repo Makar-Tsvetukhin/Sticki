@@ -1,0 +1,16 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="PauseStyles.uss"/>
+    <ui:VisualElement name="pause-root" class="pause-root">
+        <ui:VisualElement name="pause-overlay" class="pause-overlay"/>
+        <ui:VisualElement name="pause-content" class="pause-content">
+            <ui:Label name="pause-title" text="ПАУЗА" class="pause-title"/>
+            <ui:VisualElement name="pause-title-underline" class="pause-title-underline"/>
+            <ui:VisualElement name="pause-buttons" class="pause-buttons">
+                <ui:Button name="btn-resume" text="ПРОДОЛЖИТЬ" class="pause-button"/>
+                <ui:Button name="btn-settings" text="НАСТРОЙКИ" class="pause-button"/>
+                <ui:Button name="btn-main-menu" text="ГЛАВНОЕ МЕНЮ" class="pause-button"/>
+                <ui:Button name="btn-quit-game" text="ВЫХОД ИЗ ИГРЫ" class="pause-button pause-button--last"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

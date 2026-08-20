@@ -1,0 +1,47 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="HowToStyles.uss"/>
+    <ui:VisualElement name="howto-root" class="howto-root">
+        <ui:VisualElement name="howto-header" class="howto-header">
+            <ui:Label name="howto-title" text="КАК ИГРАТЬ" class="howto-title"/>
+            <ui:VisualElement name="howto-title-underline" class="howto-title-underline"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="howto-content" class="howto-content">
+            <ui:ScrollView name="howto-scroll" class="howto-scroll">
+                <ui:VisualElement class="howto-section">
+                    <ui:Label text="ЦЕЛЬ ЗАБЕГА" class="howto-section-title"/>
+                    <ui:Label text="Проходите боевые комнаты подряд, выживайте и набирайте максимум пройденных комнат за один забег." class="howto-paragraph"/>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="howto-section">
+                    <ui:Label text="ЦИКЛ ИГРЫ" class="howto-section-title"/>
+                    <ui:Label text="1. Зачистите арену от врагов." class="howto-line"/>
+                    <ui:Label text="2. Перейдите в безопасную зону." class="howto-line"/>
+                    <ui:Label text="3. Выберите улучшение." class="howto-line"/>
+                    <ui:Label text="4. Откройте дверь и идите в следующую комнату." class="howto-line"/>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="howto-section">
+                    <ui:Label text="УПРАВЛЕНИЕ" class="howto-section-title"/>
+                    <ui:Label text="W A S D — движение" class="howto-line"/>
+                    <ui:Label text="Мышь — обзор" class="howto-line"/>
+                    <ui:Label text="ЛКМ — стрельба" class="howto-line"/>
+                    <ui:Label text="Shift — ускорение" class="howto-line"/>
+                    <ui:Label text="E — взаимодействие" class="howto-line"/>
+                    <ui:Label text="Esc — пауза" class="howto-line"/>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="howto-section">
+                    <ui:Label text="СОВЕТЫ" class="howto-section-title"/>
+                    <ui:Label text="• Не стойте на месте: толпа врагов быстро зажимает." class="howto-line"/>
+                    <ui:Label text="• Следите за таймингом перезарядки и контролируйте дистанцию." class="howto-line"/>
+                    <ui:Label text="• Улучшения выбирайте под текущий стиль боя, а не случайно." class="howto-line"/>
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="howto-footer" class="howto-footer">
+            <ui:Button name="btn-howto-back" text="НАЗАД" class="howto-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
